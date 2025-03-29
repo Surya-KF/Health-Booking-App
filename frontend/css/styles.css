@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar customization */
+.navbar {
+    padding: 0.75rem 1rem;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+/* Card customization */
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1rem 1.25rem;
+}
+
+/* Button customization */
+.btn {
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+}
+
+.btn-primary {
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+.btn-primary:hover {
+    background-color: #2e59d9;
+    border-color: #2653d4;
+}
+
+.btn-success {
+    background-color: #1cc88a;
+    border-color: #1cc88a;
+}
+
+.btn-success:hover {
+    background-color: #17a673;
+    border-color: #169b6b;
+}
+
+/* Form controls */
+.form-control:focus {
+    border-color: #bac8f3;
+    box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+}
+
+/* Doctor card */
+.doctor-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Appointment date display */
+.appointment-date {
+    min-width: 60px;
+    border-radius: 0.25rem;
+}
+
+/* Rating stars */
+.rating .bi-star-fill {
+    color: #ffc107;
+}
+
+/* Calendar styles */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.calendar-day.active {
+    background-color: #e8f0fe;
+    border: 1px solid #4e73df;
+}
+
+.calendar-day.has-appointment {
+    position: relative;
+}
+
+.calendar-day.has-appointment::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #4e73df;
+}
+
+/* Dashboard stats */
+.stats-card {
+    border-left: 4px solid;
+    border-radius: 0.25rem;
+}
+
+.stats-card.primary {
+    border-left-color: #4e73df;
+}
+
+.stats-card.success {
+    border-left-color: #1cc88a;
+}
+
+.stats-card.warning {
+    border-left-color: #f6c23e;
+}
+
+.stats-card.danger {
+    border-left-color: #e74a3b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

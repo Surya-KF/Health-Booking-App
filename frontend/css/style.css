@@ -1,0 +1,40 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #3498db;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.appointment-card {
+    border-left: 5px solid #3498db;
+}
+
+.appointment-card.completed {
+    border-left: 5px solid #2ecc71;
+}
+
+.appointment-card.cancelled {
+    border-left: 5px solid #e74c3c;
+}
